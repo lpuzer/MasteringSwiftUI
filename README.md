@@ -1,8 +1,14 @@
 # MasteringSwiftUI
 
 
-This is a repository where I keep some code produceded during my studies about the SwiftUI framework . There are codes for navigating between the different pages of the application, codes related to page layout, and codes involving data transfer between different pages.
+This is a repository where I keep some code generated during my studies about the SwiftUI framework . There are codes for navigating between the different pages of the application, codes related to page layout, and codes involving data transfer between different pages.
 I also provide a video with the content of the project. The video will be updated as new modules are added to the project.
+
+
+it's also important to say that all the codes are based on the Mastering SwiftUI book, written by Simon NG:
+![MasteringSwiftUImage](https://user-images.githubusercontent.com/73191498/143142177-d17742dc-92f1-4866-a551-538ad3b4508c.jpg)
+
+
 
 Anyone is welcome to contribute any code to the MasteringSwiftUI repository.
 
@@ -20,16 +26,9 @@ it will also be necessary to configure the ViewRouter navigation, adding an enum
 
 ![Helper](https://user-images.githubusercontent.com/73191498/143082756-e60f87ca-da9f-47da-b427-ea2eb449d8e3.png) ![Screen Shot 2021-11-23 at 15 29 50](https://user-images.githubusercontent.com/73191498/143083161-e687ff58-5ce2-47be-9e9b-7d3191d9b12f.png) ![PageController](https://user-images.githubusercontent.com/73191498/143082983-79cc9304-8a75-4dda-8ae5-f66f0bcf8ae0.png)
 
-
-
-
-
-
-
 -----------------------------
 
-https://user-images.githubusercontent.com/73191498/143080462-23b21c0e-662a-4af5-94f7-5f0458971c0b.mp4
-
+https://user-images.githubusercontent.com/73191498/143141592-dea227b4-5287-4419-8164-fd49cc17d80c.mp4
 
 
 
