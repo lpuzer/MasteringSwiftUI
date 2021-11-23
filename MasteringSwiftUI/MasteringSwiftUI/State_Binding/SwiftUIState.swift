@@ -26,22 +26,22 @@ struct SwiftUIState: View {
                 }
                 
                 Spacer()
-
-                    HStack {
-                        Spacer()
-                        RouterButton(routerButtonPath: $routerButtonBack, buttonLabel: "Back")
-                        Spacer()
-                        RouterButton(routerButtonPath: $routerButtonNext, buttonLabel: "Next")
-                        Spacer()
-                    }
+                
+                HStack {
+                    Spacer()
+                    RouterButton(routerButtonPath: $routerButtonBack, buttonLabel: "Back")
+                    Spacer()
+                    RouterButton(routerButtonPath: $routerButtonNext, buttonLabel: "Next")
+                    Spacer()
+                }
             }.frame(maxWidth: .infinity, maxHeight: .infinity)
         }.frame(maxWidth: .infinity, maxHeight: .infinity)
             .background {
                 Color("MainBackground")
                     .ignoresSafeArea()
-        }
-        }
+            }
     }
+}
 
 
 struct SwiftUIState_Previews: PreviewProvider {

@@ -19,6 +19,9 @@
 		CBE211B8274CF21200AB716A /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE211B7274CF21200AB716A /* Counter.swift */; };
 		CBED6A13274D05D800B2908B /* SwiftUIStacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBED6A12274D05D800B2908B /* SwiftUIStacks.swift */; };
 		CBED6A16274D134400B2908B /* SwiftUIView_exerciseTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBED6A15274D134400B2908B /* SwiftUIView_exerciseTwo.swift */; };
+		CBED6A18274D6D9D00B2908B /* SwiftUIShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBED6A17274D6D9C00B2908B /* SwiftUIShape.swift */; };
+		CBED6A1B274D9A7A00B2908B /* SwiftUIShape_Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBED6A1A274D9A7A00B2908B /* SwiftUIShape_Exercise.swift */; };
+		CBED6A1D274DA00600B2908B /* ProgressShapeIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBED6A1C274DA00600B2908B /* ProgressShapeIndicator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +38,9 @@
 		CBE211B7274CF21200AB716A /* Counter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Counter.swift; sourceTree = "<group>"; };
 		CBED6A12274D05D800B2908B /* SwiftUIStacks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIStacks.swift; sourceTree = "<group>"; };
 		CBED6A15274D134400B2908B /* SwiftUIView_exerciseTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView_exerciseTwo.swift; sourceTree = "<group>"; };
+		CBED6A17274D6D9C00B2908B /* SwiftUIShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIShape.swift; sourceTree = "<group>"; };
+		CBED6A1A274D9A7A00B2908B /* SwiftUIShape_Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIShape_Exercise.swift; sourceTree = "<group>"; };
+		CBED6A1C274DA00600B2908B /* ProgressShapeIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressShapeIndicator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,8 +76,9 @@
 				CBBD6981274C9E13004A61EF /* MasteringSwiftUIApp.swift */,
 				CBBD699B274C9E61004A61EF /* Router */,
 				CBBD699C274C9E6C004A61EF /* Scrollview_Example */,
-				CBE211B6274CEFCD00AB716A /* State_Binding */,
+				CBED6A19274D6DA500B2908B /* Shapes */,
 				CBED6A14274D05E900B2908B /* Stacks */,
+				CBE211B6274CEFCD00AB716A /* State_Binding */,
 				CBBD6985274C9E14004A61EF /* Assets.xcassets */,
 				CBBD6987274C9E14004A61EF /* Preview Content */,
 			);
@@ -121,6 +128,16 @@
 				CBED6A15274D134400B2908B /* SwiftUIView_exerciseTwo.swift */,
 			);
 			path = Stacks;
+			sourceTree = "<group>";
+		};
+		CBED6A19274D6DA500B2908B /* Shapes */ = {
+			isa = PBXGroup;
+			children = (
+				CBED6A17274D6D9C00B2908B /* SwiftUIShape.swift */,
+				CBED6A1A274D9A7A00B2908B /* SwiftUIShape_Exercise.swift */,
+				CBED6A1C274DA00600B2908B /* ProgressShapeIndicator.swift */,
+			);
+			path = Shapes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,10 +214,13 @@
 				CBED6A13274D05D800B2908B /* SwiftUIStacks.swift in Sources */,
 				CBE211B5274CEFC500AB716A /* SwiftUIState.swift in Sources */,
 				CBBD6982274C9E13004A61EF /* MasteringSwiftUIApp.swift in Sources */,
+				CBED6A1D274DA00600B2908B /* ProgressShapeIndicator.swift in Sources */,
+				CBED6A18274D6D9D00B2908B /* SwiftUIShape.swift in Sources */,
 				CBBD6999274C9E4C004A61EF /* ScrollView_Example.swift in Sources */,
 				CBBD6990274C9E3A004A61EF /* Helper.swift in Sources */,
 				CBBD6993274C9E41004A61EF /* PageController.swift in Sources */,
 				CBBD6994274C9E41004A61EF /* ViewRouter.swift in Sources */,
+				CBED6A1B274D9A7A00B2908B /* SwiftUIShape_Exercise.swift in Sources */,
 				CBBD6998274C9E4C004A61EF /* CardView.swift in Sources */,
 				CBED6A16274D134400B2908B /* SwiftUIView_exerciseTwo.swift in Sources */,
 			);

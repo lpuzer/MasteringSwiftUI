@@ -6,6 +6,8 @@ enum Page {
     case counter
     case swiftuistacks
     case swiftuiview_exerciseTwo
+    case swiftuishape
+    case progressshapeindicador
     
 }
 

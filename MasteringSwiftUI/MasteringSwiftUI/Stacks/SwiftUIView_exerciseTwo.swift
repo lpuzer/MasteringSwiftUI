@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SwiftUIView_exerciseTwo: View {
     @EnvironmentObject var viewRouter: ViewRouter
-    @State private var routerButtonNext: Page = .scrowview_example
+    @State private var routerButtonNext: Page = .swiftuishape
     @State private var routerButtonBack: Page = .swiftuistacks
     
     var body: some View {
