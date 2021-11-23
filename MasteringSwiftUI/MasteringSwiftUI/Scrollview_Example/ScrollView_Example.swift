@@ -2,6 +2,7 @@ import SwiftUI
 
 struct ScrollView_Example: View {
     @EnvironmentObject var viewRouter: ViewRouter
+    @State private var routerButtonNext: Page = .counter
     
     var body: some View {
         VStack {
@@ -53,18 +54,10 @@ struct ScrollView_Example: View {
             
             HStack {
                 Spacer()
-                Button(action: {
-                    viewRouter.currentPage = .counter
-                }) {
-                    Text("Next")
-                        .font(.title3)
-                        .frame(width: 70, height: 30)
-                        .background(Color.gray)
-                        .foregroundColor(Color.white)
-                        .cornerRadius(20)
-                }
+                RouterButton(routerButtonPath: $routerButtonNext, buttonLabel: "Next")
                 Spacer()
             }
+           
         }
     }
 }

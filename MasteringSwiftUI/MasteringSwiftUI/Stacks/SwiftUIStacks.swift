@@ -9,6 +9,8 @@ import SwiftUI
 
 struct SwiftUIStacks: View {
     @EnvironmentObject var viewRouter: ViewRouter
+    @State private var routerButtonNext: Page = .stacksTwo
+    @State private var routerButtonBack: Page = .swiftuistate
     
     var body: some View {
         VStack {
@@ -43,6 +45,14 @@ struct SwiftUIStacks: View {
                     .offset(x: 0, y: 110)
             }
             Spacer()
+            
+            HStack {
+                Spacer()
+                RouterButton(routerButtonPath: $routerButtonBack, buttonLabel: "Back")
+                Spacer()
+                RouterButton(routerButtonPath: $routerButtonNext, buttonLabel: "Next")
+                Spacer()
+            }
         }
     }
 }

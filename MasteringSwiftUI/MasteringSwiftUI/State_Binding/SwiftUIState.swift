@@ -7,6 +7,8 @@ import SwiftUI
 
 struct SwiftUIState: View {
     @EnvironmentObject var viewRouter: ViewRouter
+    @State private var routerButtonNext: Page = .stacks
+    @State private var routerButtonBack: Page = .counter
     @State private var isPlaying = false
     
     var body: some View {
@@ -23,37 +25,18 @@ struct SwiftUIState: View {
             }
             
             Spacer()
-            
-            HStack {
-                Spacer()
-                Button(action: {
-                    viewRouter.currentPage = .counter
-                }) {
-                    Text("Back")
-                        .font(.title3)
-                        .frame(width: 70, height: 30)
-                        .background(Color.gray)
-                        .foregroundColor(Color.white)
-                        .cornerRadius(20)
+
+                HStack {
+                    Spacer()
+                    RouterButton(routerButtonPath: $routerButtonBack, buttonLabel: "Back")
+                    Spacer()
+                    RouterButton(routerButtonPath: $routerButtonNext, buttonLabel: "Next")
+                    Spacer()
                 }
-                
-                Spacer()
-                
-                Button(action: {
-                    viewRouter.currentPage = .scrowview_example
-                }) {
-                    Text("Next")
-                        .font(.title3)
-                        .frame(width: 70, height: 30)
-                        .background(Color.gray)
-                        .foregroundColor(Color.white)
-                        .cornerRadius(20)
-                }
-                Spacer()
             }
         }
     }
-}
+
 
 struct SwiftUIState_Previews: PreviewProvider {
     static var previews: some View {

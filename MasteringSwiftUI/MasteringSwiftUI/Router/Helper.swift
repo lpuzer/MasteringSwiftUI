@@ -5,6 +5,7 @@ enum Page {
     case swiftuistate
     case counter
     case stacks
+    case stacksTwo
     
 }
 

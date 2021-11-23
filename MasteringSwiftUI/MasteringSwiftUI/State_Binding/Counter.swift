@@ -9,6 +9,8 @@ import SwiftUI
 
 struct Counter: View {
     @EnvironmentObject var viewRouter: ViewRouter
+    @State private var routerButtonNext: Page = .swiftuistate
+    @State private var routerButtonBack: Page = .scrowview_example
     @State private var counterOne:Int = 0
     @State private var counterTwo:Int = 0
     @State private var counterThree:Int = 0
@@ -47,31 +49,12 @@ struct Counter: View {
                     .padding()
             }
             Spacer()
+            
             HStack {
                 Spacer()
-                Button(action: {
-                    viewRouter.currentPage = .scrowview_example
-                }) {
-                    Text("Back")
-                        .font(.title3)
-                        .frame(width: 70, height: 30)
-                    
-                        .background(Color.gray)
-                        .foregroundColor(Color.white)
-                        .cornerRadius(20)
-                }
+                RouterButton(routerButtonPath: $routerButtonBack, buttonLabel: "Back")
                 Spacer()
-                Spacer()
-                Button(action: {
-                    viewRouter.currentPage = .swiftuistate
-                }) {
-                    Text("Next")
-                        .font(.title3)
-                        .frame(width: 70, height: 30)
-                        .background(Color.gray)
-                        .foregroundColor(Color.white)
-                        .cornerRadius(20)
-                }
+                RouterButton(routerButtonPath: $routerButtonNext, buttonLabel: "Next")
                 Spacer()
             }
         }
@@ -93,7 +76,7 @@ struct Counter_Previews: PreviewProvider {
 
 struct CounterButton: View {
     @Binding var counter: Int
-    
+
     var color: Color
     
     var body: some View {
@@ -113,3 +96,7 @@ struct CounterButton: View {
         }
     }
 }
+
+
+
+
