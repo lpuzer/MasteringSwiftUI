@@ -17,46 +17,53 @@ struct Counter: View {
 
     var body: some View {
         
-        VStack {
-            Spacer()
-            RoundedRectangle(cornerRadius: 20)
-                .fill(Color.white)
-                .frame(width: 300, height: 100)
-                .overlay(
-            Text("\(addtionOfCounter(counterOne, counterTwo, counterThree))")
-                .foregroundColor(Color.black)
-                .font(.system(size: 150, weight: .bold, design: .rounded))
-        )
-            Spacer()
-            HStack {
-            CounterButton(counter: $counterOne, color: .blue)
-            CounterButton(counter: $counterTwo, color: .red)
-            CounterButton(counter: $counterThree, color: .green)
-            }.padding()
-            
-            Spacer()
-            Button(action: {
-                self.counterOne = 0
-                self.counterTwo = 0
-                self.counterThree = 0
-            }) {
-                Text("Reset")
-                    .font(.title2)
-                    .frame(width: 100, height: 40)
-                    .background(Color.gray)
-                    .foregroundColor(Color.white)
-                    .cornerRadius(20)
-                    .padding()
-            }
-            Spacer()
-            
-            HStack {
+        ZStack {
+            VStack {
                 Spacer()
-                RouterButton(routerButtonPath: $routerButtonBack, buttonLabel: "Back")
+                RoundedRectangle(cornerRadius: 20)
+                    .fill(Color.white)
+                    .frame(width: 300, height: 150)
+                    .overlay(
+                Text("\(addtionOfCounter(counterOne, counterTwo, counterThree))")
+                    .foregroundColor(Color.black)
+                    .font(.system(size: 150, weight: .bold, design: .rounded))
+            )
                 Spacer()
-                RouterButton(routerButtonPath: $routerButtonNext, buttonLabel: "Next")
+                HStack {
+                CounterButton(counter: $counterOne, color: .blue)
+                CounterButton(counter: $counterTwo, color: .red)
+                CounterButton(counter: $counterThree, color: .green)
+                }.padding()
+                
                 Spacer()
-            }
+                Button(action: {
+                    self.counterOne = 0
+                    self.counterTwo = 0
+                    self.counterThree = 0
+                }) {
+                    Text("Reset")
+                        .font(.title2)
+                        .frame(width: 150, height: 50)
+                        .background(Color("buttonColor"))
+                        .foregroundColor(Color.white)
+                        .cornerRadius(20)
+                        .padding()
+                }
+                Spacer()
+                Spacer()
+                
+                HStack {
+                    Spacer()
+                    RouterButton(routerButtonPath: $routerButtonBack, buttonLabel: "Back")
+                    Spacer()
+                    RouterButton(routerButtonPath: $routerButtonNext, buttonLabel: "Next")
+                    Spacer()
+                }
+            }.frame(maxWidth: .infinity, maxHeight: .infinity)
+        }.frame(maxWidth: .infinity, maxHeight: .infinity)
+            .background {
+                Color("MainBackground")
+                    .ignoresSafeArea()
         }
     }
     

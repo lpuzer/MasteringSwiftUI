@@ -30,8 +30,9 @@ struct CardView: View {
             }.padding()
         }.cornerRadius(10)
             .overlay(RoundedRectangle(cornerRadius: 10)
+                        
                         .stroke(Color(.sRGB, red: 150/225, green: 150/225, blue: 150/225, opacity: 0.1), lineWidth: 3)
-            )
+            ).background(Color.white)
             .padding([.top, .horizontal])
         
     }

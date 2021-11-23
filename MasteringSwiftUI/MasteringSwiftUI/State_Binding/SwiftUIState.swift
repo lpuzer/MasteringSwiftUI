@@ -7,33 +7,39 @@ import SwiftUI
 
 struct SwiftUIState: View {
     @EnvironmentObject var viewRouter: ViewRouter
-    @State private var routerButtonNext: Page = .stacks
+    @State private var routerButtonNext: Page = .swiftuistacks
     @State private var routerButtonBack: Page = .counter
     @State private var isPlaying = false
     
     var body: some View {
         
-        VStack {
-            Spacer()
-            Button(action: {
-                self.isPlaying.toggle()
-                
-            }) {
-                Image(systemName: isPlaying ? "stop.circle.fill" : "play.circle.fill")
-                    .font(.system(size: 150))
-                    .foregroundColor(isPlaying ? .red : .green)
-            }
-            
-            Spacer()
-
-                HStack {
-                    Spacer()
-                    RouterButton(routerButtonPath: $routerButtonBack, buttonLabel: "Back")
-                    Spacer()
-                    RouterButton(routerButtonPath: $routerButtonNext, buttonLabel: "Next")
-                    Spacer()
+        ZStack {
+            VStack {
+                Spacer()
+                Button(action: {
+                    self.isPlaying.toggle()
+                    
+                }) {
+                    Image(systemName: isPlaying ? "stop.circle.fill" : "play.circle.fill")
+                        .font(.system(size: 150))
+                        .foregroundColor(isPlaying ? .red : .green)
                 }
-            }
+                
+                Spacer()
+
+                    HStack {
+                        Spacer()
+                        RouterButton(routerButtonPath: $routerButtonBack, buttonLabel: "Back")
+                        Spacer()
+                        RouterButton(routerButtonPath: $routerButtonNext, buttonLabel: "Next")
+                        Spacer()
+                    }
+            }.frame(maxWidth: .infinity, maxHeight: .infinity)
+        }.frame(maxWidth: .infinity, maxHeight: .infinity)
+            .background {
+                Color("MainBackground")
+                    .ignoresSafeArea()
+        }
         }
     }
 

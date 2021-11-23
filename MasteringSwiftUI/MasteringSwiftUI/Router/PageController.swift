@@ -1,6 +1,5 @@
 import SwiftUI
 
-
 struct PageController: View {
     @EnvironmentObject var viewRouter: ViewRouter
     
@@ -19,10 +18,10 @@ struct PageController: View {
             case .counter:
                 Counter()
                 
-            case .stacks:
+            case .swiftuistacks:
                 SwiftUIStacks()
                 
-            case .stacksTwo:
+            case .swiftuiview_exerciseTwo:
                 SwiftUIView_exerciseTwo()
             }
         }
@@ -50,7 +49,7 @@ struct RouterButton: View {
                     .font(.title3)
                     .frame(width: 70, height: 30)
                 
-                    .background(Color.gray)
+                    .background(Color("buttonColor"))
                     .foregroundColor(Color.white)
                     .cornerRadius(20)
             }

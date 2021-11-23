@@ -10,33 +10,39 @@ import SwiftUI
 struct SwiftUIView_exerciseTwo: View {
     @EnvironmentObject var viewRouter: ViewRouter
     @State private var routerButtonNext: Page = .scrowview_example
-    @State private var routerButtonBack: Page = .stacks
+    @State private var routerButtonBack: Page = .swiftuistacks
     
     var body: some View {
-        VStack {
-            Spacer()
-            ZStack {
-                PricingView(title: "Basic", price: "$9", textColor: .white, bgColor: .purple, icon: "burst.fill")
-                    .padding()
-                    .offset(x: 0, y: 180)
+        ZStack {
+            VStack {
+                Spacer()
+                ZStack {
+                    PricingView(title: "Basic", price: "$9", textColor: .white, bgColor: .purple, icon: "burst.fill")
+                        .padding()
+                        .offset(x: 0, y: 180)
+                        
+                    PricingView(title: "Pro", price: "$19", textColor: .white, bgColor: Color(red: 255/255, green: 183/255, blue: 37/255), icon: "dial")
+                        .padding()
+                        .scaleEffect(0.95)
                     
-                PricingView(title: "Pro", price: "$19", textColor: .white, bgColor: Color(red: 255/255, green: 183/255, blue: 37/255), icon: "dial")
-                    .padding()
-                    .scaleEffect(0.95)
-                
-                PricingView(title: "Team", price: "$299", textColor: .white, bgColor: Color(red: 62/255, green: 63/255, blue: 70/255), icon: "wand.and.rays")
-                    .padding()
-                    .scaleEffect(0.9)
-                    .offset(x: 0, y: -180)
-            }
-            Spacer()
-            HStack {
+                    PricingView(title: "Team", price: "$299", textColor: .white, bgColor: Color(red: 62/255, green: 63/255, blue: 70/255), icon: "wand.and.rays")
+                        .padding()
+                        .scaleEffect(0.9)
+                        .offset(x: 0, y: -180)
+                }
                 Spacer()
-                RouterButton(routerButtonPath: $routerButtonBack, buttonLabel: "Back")
-                Spacer()
-                RouterButton(routerButtonPath: $routerButtonNext, buttonLabel: "Next")
-                Spacer()
-            }
+                HStack {
+                    Spacer()
+                    RouterButton(routerButtonPath: $routerButtonBack, buttonLabel: "Back")
+                    Spacer()
+                    RouterButton(routerButtonPath: $routerButtonNext, buttonLabel: "Next")
+                    Spacer()
+                }
+            }.frame(maxWidth: .infinity, maxHeight: .infinity)
+        }.frame(maxWidth: .infinity, maxHeight: .infinity)
+            .background {
+                Color("MainBackground")
+                    .ignoresSafeArea()
         }
     }
 }

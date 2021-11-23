@@ -5,59 +5,65 @@ struct ScrollView_Example: View {
     @State private var routerButtonNext: Page = .counter
     
     var body: some View {
-        VStack {
-            HStack {
-                VStack (alignment: .leading) {
-                    Text("\(formatDate())")
-                        .font(.caption)
-                        .fontWeight(.light)
-                        .foregroundColor(.primary)
-                    Text("Your Reading")
-                        .font(.title)
-                        .fontWeight(.black)
-                        .foregroundColor(.primary)
-                }.padding()
-                Spacer()
-            }
-            ScrollView (.horizontal, showsIndicators: false) {
+        ZStack {
+            VStack {
                 HStack {
-                    Group {
-                        CardView(
-                            image: "swiftui-button",
-                            category: "SwiftUI",
-                            heading: "Drawing a Border with Rounded Corners",
-                            author: "Simon Ng"
-                        )
-                        CardView(
-                            image: "macos-programming",
-                            category: "macOS",
-                            heading: "Building a Simple Editing App",
-                            author: "Gabriel Theodoropoulos"
-                        )
-                        CardView(
-                            image: "flutter-app",
-                            category: "Flutter",
-                            heading: "Building a Complex Layout with Flutter",
-                            author: "Lawrence Tan"
-                        )
-                        CardView(
-                            image: "natural-language-api",
-                            category: "iOS",
-                            heading: "What's New in Natural Language API",
-                            author: "Sai Kambampati"
-                        )
-                    }.frame(width: 300)
-                        .minimumScaleFactor(0.5)
+                    VStack (alignment: .leading) {
+                        Text("\(formatDate())")
+                            .font(.caption)
+                            .fontWeight(.light)
+                            .foregroundColor(.primary)
+                        Text("Your Reading")
+                            .font(.title)
+                            .fontWeight(.black)
+                            .foregroundColor(.primary)
+                    }.padding()
+                    Spacer()
                 }
-            }
-            Spacer()
-            
-            HStack {
+                ScrollView (.horizontal, showsIndicators: false) {
+                    HStack {
+                        Group {
+                            CardView(
+                                image: "swiftui-button",
+                                category: "SwiftUI",
+                                heading: "Drawing a Border with Rounded Corners",
+                                author: "Simon Ng"
+                            )
+                            CardView(
+                                image: "macos-programming",
+                                category: "macOS",
+                                heading: "Building a Simple Editing App",
+                                author: "Gabriel Theodoropoulos"
+                            )
+                            CardView(
+                                image: "flutter-app",
+                                category: "Flutter",
+                                heading: "Building a Complex Layout with Flutter",
+                                author: "Lawrence Tan"
+                            )
+                            CardView(
+                                image: "natural-language-api",
+                                category: "iOS",
+                                heading: "What's New in Natural Language API",
+                                author: "Sai Kambampati"
+                            )
+                        }.frame(width: 300)
+                            .minimumScaleFactor(0.5)
+                    }
+                }
                 Spacer()
-                RouterButton(routerButtonPath: $routerButtonNext, buttonLabel: "Next")
-                Spacer()
-            }
-           
+                
+                HStack {
+                    Spacer()
+                    RouterButton(routerButtonPath: $routerButtonNext, buttonLabel: "Next")
+                    Spacer()
+                }
+               
+            }.frame(maxWidth: .infinity, maxHeight: .infinity)
+        }.frame(maxWidth: .infinity, maxHeight: .infinity)
+            .background {
+                Color("MainBackground")
+                    .ignoresSafeArea()
         }
     }
 }

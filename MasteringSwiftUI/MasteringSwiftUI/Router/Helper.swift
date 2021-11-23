@@ -4,8 +4,8 @@ enum Page {
     case scrowview_example
     case swiftuistate
     case counter
-    case stacks
-    case stacksTwo
+    case swiftuistacks
+    case swiftuiview_exerciseTwo
     
 }
 
