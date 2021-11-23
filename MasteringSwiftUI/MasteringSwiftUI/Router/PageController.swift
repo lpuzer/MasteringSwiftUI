@@ -12,8 +12,15 @@ struct PageController: View {
             
             case .scrowview_example:
                 ScrollView_Example()
-
-  
+                
+            case .swiftuistate:
+               SwiftUIState()
+                
+            case .counter:
+               Counter()
+                
+            case .stacks:
+               SwiftUIStacks()
             }
         }
     }

@@ -50,6 +50,21 @@ struct ScrollView_Example: View {
                 }
             }
             Spacer()
+            
+            HStack {
+                Spacer()
+                Button(action: {
+                    viewRouter.currentPage = .counter
+                }) {
+                    Text("Next")
+                        .font(.title3)
+                        .frame(width: 70, height: 30)
+                        .background(Color.gray)
+                        .foregroundColor(Color.white)
+                        .cornerRadius(20)
+                }
+                Spacer()
+            }
         }
     }
 }
