@@ -7,5 +7,9 @@ I also provide a video with the content of the project. The video will be update
 
 
 
-https://user-images.githubusercontent.com/73191498/143077031-d705ae78-0c80-4484-a0a3-12f8eab41f71.mp4
+
+https://user-images.githubusercontent.com/73191498/143080462-23b21c0e-662a-4af5-94f7-5f0458971c0b.mp4
+
+
+
 
