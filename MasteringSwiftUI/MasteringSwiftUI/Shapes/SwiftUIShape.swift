@@ -9,8 +9,8 @@ import SwiftUI
 
 struct SwiftUIShape: View {
     @EnvironmentObject var viewRouter: ViewRouter
-    @State private var routerButtonNext: Page = .progressshapeindicador
-    @State private var routerButtonBack: Page = .swiftuiview_exerciseTwo
+    @State private var routerButtonNext: Page = .progressShapeIndicator
+    @State private var routerButtonBack: Page = .swiftUIStacksTwo
     
     var body: some View {
         ZStack {

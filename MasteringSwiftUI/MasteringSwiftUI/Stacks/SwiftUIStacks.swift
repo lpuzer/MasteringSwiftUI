@@ -9,8 +9,8 @@ import SwiftUI
 
 struct SwiftUIStacks: View {
     @EnvironmentObject var viewRouter: ViewRouter
-    @State private var routerButtonNext: Page = .swiftuiview_exerciseTwo
-    @State private var routerButtonBack: Page = .swiftuistate
+    @State private var routerButtonNext: Page = .swiftUIStacksTwo
+    @State private var routerButtonBack: Page = .swiftUIState
     
     var body: some View {
         ZStack {

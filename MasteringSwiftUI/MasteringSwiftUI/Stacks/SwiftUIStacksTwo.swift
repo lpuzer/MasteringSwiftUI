@@ -7,10 +7,10 @@
 
 import SwiftUI
 
-struct SwiftUIView_exerciseTwo: View {
+struct SwiftUIStacksTwo: View {
     @EnvironmentObject var viewRouter: ViewRouter
-    @State private var routerButtonNext: Page = .swiftuishape
-    @State private var routerButtonBack: Page = .swiftuistacks
+    @State private var routerButtonNext: Page = .swiftUIShape
+    @State private var routerButtonBack: Page = .swiftUIStacks
     
     var body: some View {
         ZStack {
@@ -48,7 +48,7 @@ struct SwiftUIView_exerciseTwo: View {
 }
 struct SwiftUIView_exerciseTwo_Previews: PreviewProvider {
     static var previews: some View {
-        SwiftUIView_exerciseTwo()
+        SwiftUIStacksTwo()
     }
 }
 

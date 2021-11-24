@@ -14,14 +14,15 @@
 		CBBD6993274C9E41004A61EF /* PageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBD6991274C9E41004A61EF /* PageController.swift */; };
 		CBBD6994274C9E41004A61EF /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBD6992274C9E41004A61EF /* ViewRouter.swift */; };
 		CBBD6998274C9E4C004A61EF /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBD6995274C9E4C004A61EF /* CardView.swift */; };
-		CBBD6999274C9E4C004A61EF /* ScrollView_Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBD6996274C9E4C004A61EF /* ScrollView_Example.swift */; };
+		CBBD6999274C9E4C004A61EF /* SuiftUIScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBD6996274C9E4C004A61EF /* SuiftUIScrollView.swift */; };
 		CBE211B5274CEFC500AB716A /* SwiftUIState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE211B4274CEFC500AB716A /* SwiftUIState.swift */; };
 		CBE211B8274CF21200AB716A /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE211B7274CF21200AB716A /* Counter.swift */; };
 		CBED6A13274D05D800B2908B /* SwiftUIStacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBED6A12274D05D800B2908B /* SwiftUIStacks.swift */; };
-		CBED6A16274D134400B2908B /* SwiftUIView_exerciseTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBED6A15274D134400B2908B /* SwiftUIView_exerciseTwo.swift */; };
+		CBED6A16274D134400B2908B /* SwiftUIStacksTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBED6A15274D134400B2908B /* SwiftUIStacksTwo.swift */; };
 		CBED6A18274D6D9D00B2908B /* SwiftUIShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBED6A17274D6D9C00B2908B /* SwiftUIShape.swift */; };
 		CBED6A1B274D9A7A00B2908B /* SwiftUIShape_Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBED6A1A274D9A7A00B2908B /* SwiftUIShape_Exercise.swift */; };
 		CBED6A1D274DA00600B2908B /* ProgressShapeIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBED6A1C274DA00600B2908B /* ProgressShapeIndicator.swift */; };
+		CBED6A1F274DCF4600B2908B /* SwiftUIAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBED6A1E274DCF4500B2908B /* SwiftUIAnimation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,14 +34,15 @@
 		CBBD6991274C9E41004A61EF /* PageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageController.swift; sourceTree = "<group>"; };
 		CBBD6992274C9E41004A61EF /* ViewRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
 		CBBD6995274C9E4C004A61EF /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
-		CBBD6996274C9E4C004A61EF /* ScrollView_Example.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollView_Example.swift; sourceTree = "<group>"; };
+		CBBD6996274C9E4C004A61EF /* SuiftUIScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuiftUIScrollView.swift; sourceTree = "<group>"; };
 		CBE211B4274CEFC500AB716A /* SwiftUIState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIState.swift; sourceTree = "<group>"; };
 		CBE211B7274CF21200AB716A /* Counter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Counter.swift; sourceTree = "<group>"; };
 		CBED6A12274D05D800B2908B /* SwiftUIStacks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIStacks.swift; sourceTree = "<group>"; };
-		CBED6A15274D134400B2908B /* SwiftUIView_exerciseTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView_exerciseTwo.swift; sourceTree = "<group>"; };
+		CBED6A15274D134400B2908B /* SwiftUIStacksTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIStacksTwo.swift; sourceTree = "<group>"; };
 		CBED6A17274D6D9C00B2908B /* SwiftUIShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIShape.swift; sourceTree = "<group>"; };
 		CBED6A1A274D9A7A00B2908B /* SwiftUIShape_Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIShape_Exercise.swift; sourceTree = "<group>"; };
 		CBED6A1C274DA00600B2908B /* ProgressShapeIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressShapeIndicator.swift; sourceTree = "<group>"; };
+		CBED6A1E274DCF4500B2908B /* SwiftUIAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				CBBD6981274C9E13004A61EF /* MasteringSwiftUIApp.swift */,
+				CBED6A20274DCF4E00B2908B /* Animation */,
 				CBBD699B274C9E61004A61EF /* Router */,
 				CBBD699C274C9E6C004A61EF /* Scrollview_Example */,
 				CBED6A19274D6DA500B2908B /* Shapes */,
@@ -107,7 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				CBBD6995274C9E4C004A61EF /* CardView.swift */,
-				CBBD6996274C9E4C004A61EF /* ScrollView_Example.swift */,
+				CBBD6996274C9E4C004A61EF /* SuiftUIScrollView.swift */,
 			);
 			path = Scrollview_Example;
 			sourceTree = "<group>";
@@ -125,7 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				CBED6A12274D05D800B2908B /* SwiftUIStacks.swift */,
-				CBED6A15274D134400B2908B /* SwiftUIView_exerciseTwo.swift */,
+				CBED6A15274D134400B2908B /* SwiftUIStacksTwo.swift */,
 			);
 			path = Stacks;
 			sourceTree = "<group>";
@@ -138,6 +141,14 @@
 				CBED6A1C274DA00600B2908B /* ProgressShapeIndicator.swift */,
 			);
 			path = Shapes;
+			sourceTree = "<group>";
+		};
+		CBED6A20274DCF4E00B2908B /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				CBED6A1E274DCF4500B2908B /* SwiftUIAnimation.swift */,
+			);
+			path = Animation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,13 +227,14 @@
 				CBBD6982274C9E13004A61EF /* MasteringSwiftUIApp.swift in Sources */,
 				CBED6A1D274DA00600B2908B /* ProgressShapeIndicator.swift in Sources */,
 				CBED6A18274D6D9D00B2908B /* SwiftUIShape.swift in Sources */,
-				CBBD6999274C9E4C004A61EF /* ScrollView_Example.swift in Sources */,
+				CBBD6999274C9E4C004A61EF /* SuiftUIScrollView.swift in Sources */,
 				CBBD6990274C9E3A004A61EF /* Helper.swift in Sources */,
+				CBED6A1F274DCF4600B2908B /* SwiftUIAnimation.swift in Sources */,
 				CBBD6993274C9E41004A61EF /* PageController.swift in Sources */,
 				CBBD6994274C9E41004A61EF /* ViewRouter.swift in Sources */,
 				CBED6A1B274D9A7A00B2908B /* SwiftUIShape_Exercise.swift in Sources */,
 				CBBD6998274C9E4C004A61EF /* CardView.swift in Sources */,
-				CBED6A16274D134400B2908B /* SwiftUIView_exerciseTwo.swift in Sources */,
+				CBED6A16274D134400B2908B /* SwiftUIStacksTwo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

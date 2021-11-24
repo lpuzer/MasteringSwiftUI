@@ -7,7 +7,7 @@ import SwiftUI
 
 struct SwiftUIState: View {
     @EnvironmentObject var viewRouter: ViewRouter
-    @State private var routerButtonNext: Page = .swiftuistacks
+    @State private var routerButtonNext: Page = .swiftUIStacks
     @State private var routerButtonBack: Page = .counter
     @State private var isPlaying = false
     

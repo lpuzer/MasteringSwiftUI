@@ -9,8 +9,8 @@ import SwiftUI
 
 struct ProgressShapeIndicator: View {
     @EnvironmentObject var viewRouter: ViewRouter
-    @State private var routerButtonNext: Page = .scrowview_example
-    @State private var routerButtonBack: Page = .swiftuishape
+    @State private var routerButtonNext: Page = .swiftUIAnimation
+    @State private var routerButtonBack: Page = .swiftUIShape
     
     private var purpleGradient = LinearGradient(
         gradient: Gradient(

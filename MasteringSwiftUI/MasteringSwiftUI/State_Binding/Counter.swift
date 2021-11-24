@@ -9,8 +9,8 @@ import SwiftUI
 
 struct Counter: View {
     @EnvironmentObject var viewRouter: ViewRouter
-    @State private var routerButtonNext: Page = .swiftuistate
-    @State private var routerButtonBack: Page = .scrowview_example
+    @State private var routerButtonNext: Page = .swiftUIState
+    @State private var routerButtonBack: Page = .swiftUIScrowView
     @State private var counterOne:Int = 0
     @State private var counterTwo:Int = 0
     @State private var counterThree:Int = 0

@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct ScrollView_Example: View {
+struct SuiftUIScrollView: View {
     @EnvironmentObject var viewRouter: ViewRouter
     @State private var routerButtonNext: Page = .counter
     
@@ -70,13 +70,13 @@ struct ScrollView_Example: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ScrollView_Example()
+        SuiftUIScrollView()
             .environmentObject(ViewRouter())
     }
 }
 
 
-extension ScrollView_Example {
+extension SuiftUIScrollView {
         func formatDate() -> String {
             let dateFormatter = DateFormatter()
             dateFormatter.setLocalizedDateFormatFromTemplate("EEEE, MMM d")

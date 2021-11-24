@@ -1,16 +1,42 @@
 import SwiftUI
 
 enum Page {
-    case scrowview_example
-    case swiftuistate
+
     case counter
-    case swiftuistacks
-    case swiftuiview_exerciseTwo
-    case swiftuishape
-    case progressshapeindicador
-    
+    case progressShapeIndicator
+    case swiftUIScrowView
+    case swiftUIAnimation
+    case swiftUIShape
+    case swiftUIStacks
+    case swiftUIState
+    case swiftUIStacksTwo
+
 }
 
     
     
     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

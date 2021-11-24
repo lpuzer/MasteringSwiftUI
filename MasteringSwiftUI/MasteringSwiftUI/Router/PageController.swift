@@ -9,26 +9,30 @@ struct PageController: View {
             
             switch viewRouter.currentPage {
                 
-            case .scrowview_example:
-                ScrollView_Example()
-                
             case .counter:
                 Counter()
                 
-            case .swiftuistate:
-                SwiftUIState()
+            case .progressShapeIndicator:
+                ProgressShapeIndicator()
                 
-            case .swiftuistacks:
+            case .swiftUIScrowView:
+                SuiftUIScrollView()
+                  
+            case .swiftUIAnimation:
+                SwiftUIAnimation()
+                
+            case .swiftUIShape:
+                SwiftUIShape()
+                  
+            case .swiftUIStacks:
                 SwiftUIStacks()
                 
-            case .swiftuiview_exerciseTwo:
-                SwiftUIView_exerciseTwo()
-                
-            case .swiftuishape:
-                SwiftUIShape()
-                   
-            case .progressshapeindicador:
-                ProgressShapeIndicator()
+            case .swiftUIState:
+                SwiftUIState()
+                 
+            case .swiftUIStacksTwo:
+                SwiftUIStacksTwo()
+                    
             }
         }
     }
